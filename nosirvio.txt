@@ -1,0 +1,39 @@
+// borrar de la linea 6 en adelante
+
+
+
+void main (){
+runApp(constant MiAppBar());
+}
+
+
+class MiAppBar extend SatatelessWidget{
+const MiAppBar ({super.key});
+
+@override
+Widget build (BuildContext context){
+return MaterialApp(
+debugShowCheckedModeBanner: false,
+home:Scasffold(
+// actualizar hot reload
+appBar: AppBar(
+title: Text ("hola mi AppBar",  style: TextStyle(
+                color: Colors.white, // Cambia el color de la letra aquí
+              ),),//textstyle //text
+centerTitle: true,
+backgroundColor: Colors.pink,
+leading: IconButton(
+            icon: Icon(Icons.menu), // Cambia el ícono aquí
+            onPressed: () {
+              // Acción al presionar el ícono
+            },
+color: colors.white,// color de icono
+          ),//iconbutton
+),//AppBar
+),//scaffold
+);//materialapp
+}//fin de build
+}//fin clase MiAppBar
+
+
+se baja como zip  la carpeta .idx, click mostrar en carpeta, se descomprime
